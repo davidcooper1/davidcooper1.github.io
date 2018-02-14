@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<body>
+<h1>What is ARCore?<h1>
+- AR Core is an AR API for Android.
+- Its predicessor was the Tango Project, a project aimed at providing an extremely accurate AR experience through 
+
+special hardware on supported phones.
+- After noticing the work Apple had done on ARKit, Google decided to drop the Tango Project in favor of ARCore. 
+- There was no point in having a lot of extra money spent on specialized hardware when a very similar experience could be provided through a software-only means.
+
+Applications:
+- Seeing the Size/Shape of objects as they would be in the real world.
+- This could be useful as a furniture shopping tool as this allows the user to see how different furniture pieces could fit into the home without having to buy each piece.
+- Can place helpful things down like sticky notes where they are viewable to the AR user, but not in the way of anything.
+
+How Does it Work?
+- ARCore tracks motion using a process called concurrent odometry and mapping (COM). It uses the camera to detect "feature points". The change in position of these feature points as well as the inertial measurements from the phones Intertial Measurement Unit (IMU) to calculate the determine where the phone is located in the world.
+- ARCore builds planes out of feature points that appear to lie on common horizontal surfaces. This information can then be used to place virtual objects on detected flat surfaces.
+- ARCore has can detect lighting and give an average intensity of the current camera image, so virtual objects can be subject to the same lighting conditions for the sake of realism.
+
+Why Use ARCore?
+- No special hardware is needed! ARCore only requires a supported Android device.
+- ARCore can be used with Unity and Unreal to make it easier for game developers to pick up ARCore.
+- ARCore is being actively evaluated by developers on Github. This means google is making it their top priority to make ARCore readily usable by developers.
+- There have been no talk of simulator sickness associated with this device. (0 sickness rating) 
+
+Issues with ARCore
+- ARCore does not work with surfaces that are reflective or lack texture as it cannot reliably build planes for virtual objects to be placed on.
+- ARCore is limited to only certain Android models, and its development is slightly hindered by the hardware fragmentation of the Android market.
+
+ARCore vs ARKit
+- ARKit is very similar to ARCore.
+- Both ARCore and ARKit are better at different aspects of forming the AR experience.
+- ARCore is better at mapping surroundings and recovering from tracking errors while ARKit is better at keeping track of phone location.
+- The big thing that ARKit has that favors its development is that it does not suffer from the same hardware fragmentation that ARCore has to deal with. 
+- Even so, for all intents and purposes both API's provide the same performance overall.
+
+Conclusion
+- The art of creating AR experiences is far from being perfected. We still have a long way to go, but for now there is no clear leader in the race to make the perfect AR experience.
+	</body>
+</html>
